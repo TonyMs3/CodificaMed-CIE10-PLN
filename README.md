@@ -1,5 +1,7 @@
 # CodificaMed
 
+Repositorio público: [TonyMs3/CodificaMed-CIE10-PLN](https://github.com/TonyMs3/CodificaMed-CIE10-PLN).
+
 Prototipo académico de asistencia a codificación de diagnósticos CIE-10-ES, edición 2018. Recibe notas en español, propone códigos con evidencia literal y diferencia confirmado, negado, descartado y sospechoso. Requiere revisión humana. No realiza diagnósticos médicos. Introduce exclusivamente notas ficticias o textos públicos de CodiEsp sin datos personales privados.
 
 ## Instalación y ejecución
@@ -67,8 +69,8 @@ Tras descargar los recursos con scripts.prepare:
 .venv/Scripts/python -m scripts.check_corpus_integrity
 ```
 
-La verificación anterior del proyecto registró 39 pruebas superadas y comprobaciones reales de interfaz con ambos modelos. Las pruebas cubren corpus, recuperación, evidencia literal, estados y contradicciones, validación de códigos, métricas, reanudación y proveedores simulados. Los mocks no acreditan calidad del modelo real. No se repitieron inferencias al preparar esta entrega. Una instalación limpia requiere conexión para dependencias y recursos.
+La última verificación del proyecto registró 40 pruebas superadas, incluida la independencia de las casillas de revisión por modelo, código y evidencia. También existen comprobaciones anteriores de interfaz con ambos modelos. Las pruebas cubren corpus, recuperación, evidencia literal, estados y contradicciones, validación de códigos, métricas, reanudación y proveedores simulados. Los mocks no acreditan calidad del modelo real. No se repitieron inferencias al preparar esta entrega. Una instalación limpia requiere conexión para dependencias y recursos.
 
 El informe está en [informe/Informe_Ejecutivo_CodificaMed.pdf](informe/Informe_Ejecutivo_CodificaMed.pdf). Contiene problemática y objetivo, las seis fases CRISP-ML(Q), arquitectura, comparación, conclusiones y limitaciones. Referencia metodológica: [CRISP-ML(Q)](https://www.mdpi.com/2504-4990/3/2/392). El prototipo requiere revisión humana y no garantiza exactitud clínica.
 
-Pendiente del estudiante: grabar el video de más de 10 minutos mostrando el funcionamiento y mantener su rostro visible en una sección de pantalla. No se publicó GitHub ni se inventó una URL o un video. La entrega excluye secretos, prompt interno, documentos de auditoría, entorno, modelos, cachés y corpus descargado.
+Pendiente del estudiante: grabar el video de más de 10 minutos mostrando el funcionamiento y mantener su rostro visible en una sección de pantalla. No se inventó un video. La entrega excluye secretos, prompt interno, documentos de auditoría, entorno, modelos, cachés y corpus descargado.
