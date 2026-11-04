@@ -1,4 +1,5 @@
-﻿import json,time
+"""Mide la cobertura de candidatos en dev para distintos límites de recuperación."""
+import json,time
 from codificamed.data import ROOT,catalog,documents
 from codificamed.retrieval import Retriever
 start=time.perf_counter();c=catalog();r=Retriever(c)

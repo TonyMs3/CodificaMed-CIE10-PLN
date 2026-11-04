@@ -1,3 +1,4 @@
+"""Comprueba disponibilidad y generación con una nota ficticia; consume una solicitud."""
 import json,os,time
 from dotenv import load_dotenv
 from google import genai
@@ -5,7 +6,7 @@ from google.genai import types
 from codificamed.data import ROOT,catalog
 from codificamed.pipeline import infer,validate
 load_dotenv(ROOT/'.env',encoding='utf-8-sig',override=True)
-result={'key_loaded':bool(os.getenv('GEMINI_API_KEY')),'model':os.getenv('GEMINI_MODEL'),'source':'private .env; key omitted'}
+result={'key_loaded':bool(os.getenv('GEMINI_API_KEY')),'model':os.getenv('GEMINI_MODEL'),'source':'Configuración privada en .env; credencial excluida'}
 try:
     with genai.Client(api_key=os.environ['GEMINI_API_KEY'],http_options=types.HttpOptions(timeout=60000,retry_options=types.HttpRetryOptions(attempts=1))) as client:
         model=client.models.get(model=os.environ['GEMINI_MODEL'])

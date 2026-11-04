@@ -49,7 +49,7 @@ def test_real_catalog_and_corpus():
     assert len(c)>50000
     assert all(code in c for code in CAT)
     assert [len(documents(s)) for s in ['train','dev','test']]==[500,250,250]
-    assert all(row['gold'] for row in documents('test'))  # Gold remains intact, including official catalog mismatches.
+    assert all(row['gold'] for row in documents('test'))  # Se conservan las referencias, incluso los códigos ausentes del catálogo.
 def test_retrieval():
     candidates=Retriever(CAT).retrieve('Hipertensión esencial',k=1)
     assert list(candidates)==['I10']

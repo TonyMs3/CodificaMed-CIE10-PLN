@@ -1,4 +1,5 @@
-﻿import json,urllib.request
+"""Describe las anotaciones y contrasta las licencias con los registros de origen."""
+import json,urllib.request
 from codificamed.data import DATA,catalog,documents
 c=catalog();audit={}
 for split in ['train','dev','test']:

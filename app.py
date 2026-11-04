@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv(ROOT/'.env',encoding='utf-8-sig',override=True)
 st.set_page_config(page_title='CodificaMed',layout='wide')
 st.title('CodificaMed')
-st.caption('Asistencia académica de codificación CIE-10-ES 2018. Requiere revisión profesional. No realiza diagnósticos médicos.')
+st.caption('Asistencia académica para la codificación CIE-10-ES 2018. Requiere revisión profesional. No realiza diagnósticos médicos.')
 st.info('Introduce exclusivamente casos ficticios o textos públicos de CodiEsp. No introduzcas historias clínicas reales ni datos personales.')
 @st.cache_resource(show_spinner='Preparando catálogo…')
 def resources(): return Retriever(catalog())
@@ -15,7 +15,7 @@ except Exception as error:
     st.error(str(error));st.stop()
 examples=json.loads((ROOT/'tests/fixtures/sinteticos.json').read_text(encoding='utf-8-sig'))
 backend=st.selectbox('Modelo',['Ollama (local)','API externa (Gemini)'])
-if backend.startswith('API') and (not os.getenv('GEMINI_API_KEY') or not os.getenv('GEMINI_MODEL')): st.warning('API no configurada. Completa GEMINI_API_KEY en el archivo .env del proyecto.')
+if backend.startswith('API') and (not os.getenv('GEMINI_API_KEY') or not os.getenv('GEMINI_MODEL')): st.warning('API no configurada. Define GEMINI_API_KEY y GEMINI_MODEL en .env.')
 example=st.selectbox('Ejemplo ficticio',['Escribir nota']+[r['id']+' · '+r['note'] for r in examples])
 if st.button('Cargar ejemplo') and example!='Escribir nota':
     st.session_state['note']=next(r['note'] for r in examples if example.startswith(r['id']))
