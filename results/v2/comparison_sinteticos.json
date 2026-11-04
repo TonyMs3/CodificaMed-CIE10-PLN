@@ -1,0 +1,91 @@
+{
+  "status": "complete",
+  "paired_ids": [
+    "S02",
+    "S06"
+  ],
+  "paired_documents": 2,
+  "pipeline_sha256": "e39eebe923750a44c5d049992c8562c6f2efa0c977338920c4f498c90ba0f50c",
+  "planned_local": 2,
+  "planned_external": 2,
+  "local": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "micro_precision": 1.0,
+    "micro_recall": 1.0,
+    "micro_f1": 1.0,
+    "macro_document_f1": 1.0,
+    "documents": 2,
+    "gold_codes": 1,
+    "predicted_codes": 1,
+    "model": "qwen3.5:4b",
+    "seconds": 128.91918659990188,
+    "false_positives": {
+      "S02": [],
+      "S06": []
+    },
+    "false_negatives": {
+      "S02": [],
+      "S06": []
+    },
+    "rejected": [],
+    "negation_errors": 0,
+    "state_metrics": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 1,
+      "micro_precision": 1.0,
+      "micro_recall": 0.75,
+      "micro_f1": 0.8571428571428571,
+      "macro_document_f1": 0.5,
+      "documents": 2,
+      "gold_codes": 4,
+      "predicted_codes": 3
+    },
+    "state_exact_documents": 1,
+    "incorrect_state_pairs": 0,
+    "negative_mention_omissions": 1,
+    "suspected_mention_omissions": 0
+  },
+  "externo": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "micro_precision": 1.0,
+    "micro_recall": 1.0,
+    "micro_f1": 1.0,
+    "macro_document_f1": 1.0,
+    "documents": 2,
+    "gold_codes": 1,
+    "predicted_codes": 1,
+    "model": "gemini-3.5-flash-lite",
+    "seconds": 26.850263300002553,
+    "false_positives": {
+      "S02": [],
+      "S06": []
+    },
+    "false_negatives": {
+      "S02": [],
+      "S06": []
+    },
+    "rejected": [],
+    "negation_errors": 0,
+    "state_metrics": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "micro_precision": 1.0,
+      "micro_recall": 1.0,
+      "micro_f1": 1.0,
+      "macro_document_f1": 1.0,
+      "documents": 2,
+      "gold_codes": 4,
+      "predicted_codes": 4
+    },
+    "state_exact_documents": 2,
+    "incorrect_state_pairs": 0,
+    "negative_mention_omissions": 0,
+    "suspected_mention_omissions": 0
+  }
+}

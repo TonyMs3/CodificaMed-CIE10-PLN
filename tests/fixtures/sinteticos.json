@@ -1,0 +1,9 @@
+﻿[
+ {"id":"S01","sinteticos":true,"note":"Diagnóstico confirmado: hipertensión esencial.","gold":["I10"],"mentions":[{"codigo":"I10","estado":"confirmado"}]},
+ {"id":"S02","sinteticos":true,"note":"Niega diabetes mellitus tipo 2 sin complicaciones.","gold":[],"mentions":[{"codigo":"E11.9","estado":"negado"}]},
+ {"id":"S03","sinteticos":true,"note":"Se descarta neumonía no especificada.","gold":[],"mentions":[{"codigo":"J18.9","estado":"descartado"}]},
+ {"id":"S04","sinteticos":true,"note":"Probable neumonía no especificada, pendiente de confirmar.","gold":[],"mentions":[{"codigo":"J18.9","estado":"sospechoso"}]},
+ {"id":"S05","sinteticos":true,"note":"HTA (hipertensión esencial) confirmada. Diabetes mellitus tipo 2 sin complicaciones confirmada.","gold":["I10","E11.9"],"mentions":[{"codigo":"I10","estado":"confirmado"},{"codigo":"E11.9","estado":"confirmado"}]},
+ {"id":"S06","sinteticos":true,"note":"Hipertensión esencial confirmada. Se descarta neumonía no especificada. Probable diabetes mellitus tipo 2 sin complicaciones.","gold":["I10"],"mentions":[{"codigo":"I10","estado":"confirmado"},{"codigo":"J18.9","estado":"descartado"},{"codigo":"E11.9","estado":"sospechoso"}]},
+ {"id":"S07","sinteticos":true,"note":"Al ingreso se sospecha neumonía no especificada. Al alta se descarta neumonía no especificada.","gold":[],"mentions":[{"codigo":"J18.9","estado":"sospechoso"},{"codigo":"J18.9","estado":"descartado"}]}
+]

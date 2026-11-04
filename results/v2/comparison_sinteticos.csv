@@ -1,0 +1,3 @@
+﻿backend,model,documents,tp,fp,fn,micro_precision,micro_recall,micro_f1,seconds
+local,qwen3.5:4b,2,1,0,0,1.0,1.0,1.0,128.91918659990188
+externo,gemini-3.5-flash-lite,2,1,0,0,1.0,1.0,1.0,26.850263300002553

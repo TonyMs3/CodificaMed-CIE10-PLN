@@ -1,0 +1,52 @@
+[
+  {
+    "id": "S02",
+    "sinteticos": true,
+    "note": "Niega diabetes mellitus tipo 2 sin complicaciones.",
+    "gold": [],
+    "mentions": [
+      {
+        "codigo": "E11.9",
+        "estado": "negado"
+      }
+    ]
+  },
+  {
+    "id": "S06",
+    "sinteticos": true,
+    "note": "Hipertensión esencial confirmada. Se descarta neumonía no especificada. Probable diabetes mellitus tipo 2 sin complicaciones.",
+    "gold": [
+      "I10"
+    ],
+    "mentions": [
+      {
+        "codigo": "I10",
+        "estado": "confirmado"
+      },
+      {
+        "codigo": "J18.9",
+        "estado": "descartado"
+      },
+      {
+        "codigo": "E11.9",
+        "estado": "sospechoso"
+      }
+    ]
+  },
+  {
+    "id": "S07",
+    "sinteticos": true,
+    "note": "Al ingreso se sospecha neumonía no especificada. Al alta se descarta neumonía no especificada.",
+    "gold": [],
+    "mentions": [
+      {
+        "codigo": "J18.9",
+        "estado": "sospechoso"
+      },
+      {
+        "codigo": "J18.9",
+        "estado": "descartado"
+      }
+    ]
+  }
+]
