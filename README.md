@@ -73,4 +73,4 @@ La última verificación del proyecto registró 40 pruebas superadas, incluida l
 
 El informe está en [informe/Informe_Ejecutivo_CodificaMed.pdf](informe/Informe_Ejecutivo_CodificaMed.pdf). Contiene problemática y objetivo, las seis fases CRISP-ML(Q), arquitectura, comparación, conclusiones y limitaciones. Referencia metodológica: [CRISP-ML(Q)](https://www.mdpi.com/2504-4990/3/2/392). El prototipo requiere revisión humana y no garantiza exactitud clínica.
 
-Pendiente del estudiante: grabar el video de más de 10 minutos mostrando el funcionamiento y mantener su rostro visible en una sección de pantalla. No se inventó un video. La entrega excluye secretos, prompt interno, documentos de auditoría, entorno, modelos, cachés y corpus descargado.
+
